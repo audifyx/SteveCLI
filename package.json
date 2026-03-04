@@ -1,7 +1,7 @@
 {
   "name": "agent-steve-cli",
-  "version": "3.0.2",
-  "description": "Agent Steve CLI - Full computer control assistant with beautiful big UI",
+  "version": "3.1.0",
+  "description": "Agent Steve CLI - Full computer control with Twitter/X integration",
   "main": "index.js",
   "bin": {
     "steve": "./index.js"
@@ -20,21 +20,25 @@
     "assistant",
     "terminal",
     "tui",
-    "productivity"
+    "productivity",
+    "twitter",
+    "x"
   ],
   "author": "Audifyx",
   "license": "MIT",
   "dependencies": {
-    "commander": "^11.0.0",
-    "chalk": "^4.1.2",
-    "inquirer": "^8.2.6",
-    "ora": "^5.4.1",
     "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.6.1",
     "figlet": "^1.5.2",
-    "tree-kill": "^1.2.2",
-    "open": "^8.4.2",
+    "inquirer": "^8.2.6",
     "node-cache": "^5.1.2",
-    "dayjs": "^1.11.7"
+    "open": "^8.4.2",
+    "ora": "^5.4.1",
+    "tree-kill": "^1.2.2",
+    "twitter-api-v2": "^1.29.0"
   },
   "engines": {
     "node": ">=16.0.0"

@@ -3,6 +3,7 @@ npm-debug.log
 dist/
 coverage/
 .env
+.env.local
 *.log
 .DS_Store
 .agent-steve-config.json
