@@ -1,7 +1,7 @@
 {
   "name": "agent-steve-cli",
-  "version": "3.1.0",
-  "description": "Agent Steve CLI - Full computer control with Twitter/X integration",
+  "version": "4.0.0",
+  "description": "Agent Steve CLI - Full computer control + Solana analytics with Sol Tools V5",
   "main": "index.js",
   "bin": {
     "steve": "./index.js"
@@ -21,24 +21,29 @@
     "terminal",
     "tui",
     "productivity",
-    "twitter",
-    "x"
+    "solana",
+    "crypto",
+    "trading",
+    "analytics"
   ],
   "author": "Audifyx",
   "license": "MIT",
   "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "bn.js": "^5.2.3",
     "boxen": "^5.1.2",
+    "bs58": "^5.0.0",
     "chalk": "^4.1.2",
     "commander": "^11.0.0",
     "dayjs": "^1.11.7",
-    "dotenv": "^16.6.1",
+    "dotenv": "^16.4.5",
     "figlet": "^1.5.2",
     "inquirer": "^8.2.6",
     "node-cache": "^5.1.2",
     "open": "^8.4.2",
     "ora": "^5.4.1",
     "tree-kill": "^1.2.2",
-    "twitter-api-v2": "^1.29.0"
+    "twitter-api-v2": "^1.15.2"
   },
   "engines": {
     "node": ">=16.0.0"
