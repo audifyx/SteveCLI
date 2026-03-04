@@ -1,7 +1,7 @@
 {
   "name": "agent-steve-cli",
-  "version": "3.0.1",
-  "description": "Agent Steve CLI - Full computer control assistant with beautiful UI",
+  "version": "3.0.2",
+  "description": "Agent Steve CLI - Full computer control assistant with beautiful big UI",
   "main": "index.js",
   "bin": {
     "steve": "./index.js"
@@ -30,7 +30,6 @@
     "ora": "^5.4.1",
     "boxen": "^5.1.2",
     "figlet": "^1.5.2",
-    "gradient-string": "^2.0.2",
     "tree-kill": "^1.2.2",
     "open": "^8.4.2",
     "node-cache": "^5.1.2",

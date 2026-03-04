@@ -14,7 +14,6 @@ const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
-const gradient = require('gradient-string');
 const boxen = require('boxen');
 
 // Get terminal dimensions
@@ -30,6 +29,9 @@ function clearScreen() {
 }
 
 function centerText(text, width = TERM_WIDTH) {
+  if (typeof text !== 'string') {
+    text = String(text);
+  }
   const lines = text.split('\n');
   return lines.map(line => {
     const padding = Math.max(0, Math.floor((width - line.length) / 2));
@@ -42,12 +44,13 @@ function showBanner() {
   
   const banner = figlet.textSync('AGENT STEVE', {
     font: 'Standard',
-   HorizontalLayout: 'default',
+    horizontalLayout: 'default',
     verticalLayout: 'default'
   });
 
-  const gradientBanner = gradient('cyber', banner);
-  const centeredBanner = centerText(gradientBanner);
+  // Use cyan color for banner (no gradient to avoid issues)
+  const coloredBanner = chalk.cyan(banner);
+  const centeredBanner = centerText(coloredBanner);
   
   console.log('\n');
   console.log(centeredBanner);
@@ -150,7 +153,7 @@ function showPause() {
 }
 
 // ============================================
-// FILE OPERATIONS (Same as before but with better UI)
+// FILE OPERATIONS
 // ============================================
 
 const fileCommands = {
