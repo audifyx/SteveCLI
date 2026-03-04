@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node index.js --dev",
-    "test": "node index.js --test"
+    "test": "node index.js --test",
+    "build": "pkg . --out-path dist --targets node16-win-x64"
   },
   "keywords": [
     "cli",
@@ -37,5 +38,12 @@
   },
   "engines": {
     "node": ">=16.0.0"
+  },
+  "pkg": {
+    "scripts": [],
+    "assets": [],
+    "targets": [
+      "node16-win-x64"
+    ]
   }
 }
