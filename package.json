@@ -1,13 +1,14 @@
 {
   "name": "agent-steve-cli",
-  "version": "2.0.0",
-  "description": "Advanced CLI for Agent Steve - Full computer control with beautiful UI",
+  "version": "3.0.1",
+  "description": "Agent Steve CLI - Full computer control assistant with beautiful UI",
   "main": "index.js",
   "bin": {
     "steve": "./index.js"
   },
   "scripts": {
     "start": "node index.js",
+    "dev": "node index.js --dev",
     "test": "node index.js --test"
   },
   "keywords": [
@@ -17,7 +18,8 @@
     "automation",
     "assistant",
     "terminal",
-    "tui"
+    "tui",
+    "productivity"
   ],
   "author": "Audifyx",
   "license": "MIT",
@@ -26,15 +28,15 @@
     "chalk": "^4.1.2",
     "inquirer": "^8.2.6",
     "ora": "^5.4.1",
-    "cli-box": "^6.0.10",
-    "blessed": "^0.1.81",
-    "blessed-contrib": "^4.11.0",
+    "boxen": "^5.1.2",
     "figlet": "^1.5.2",
-    "terminal-kit": "^2.4.0",
     "gradient-string": "^2.0.2",
-    "boxen": "^5.1.2"
+    "tree-kill": "^1.2.2",
+    "open": "^8.4.2",
+    "node-cache": "^5.1.2",
+    "dayjs": "^1.11.7"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   }
 }
